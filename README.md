@@ -10,8 +10,23 @@
 
 ## Usage
 ```javascript
+import React from "react";
+import { View } from "react-native";
+import { Icon } from "native-base";
 import PickerSelectN from 'react-native-picker-select-n';
 
-// TODO: What to do with the module?
-PickerSelectN;
+const PickerSelectN = props => {
+    return(
+        <View style={{ flex: 1 }}>
+            <PickerSelectN
+                placeholder={"Please select"}
+                onValueChange={val => console.log(val)}
+                value={val}
+                itemStyle={{ color: "white" }}
+                Icon={<Icon name="md-caret-down" />}
+            />
+        </View>
+    );
+};
+
 ```
