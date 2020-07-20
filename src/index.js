@@ -118,13 +118,13 @@ export default class PickerSelectN extends PureComponent {
 
     static getDerivedStateFromProps(nextProps, prevState) {
         // update items if items or placeholder prop changes
-        const items = RNPickerSelect.handlePlaceholder({
+        const items = PickerSelectN.handlePlaceholder({
             placeholder: nextProps.placeholder,
         }).concat(nextProps.items);
         const itemsChanged = !isEqual(prevState.items, items);
 
         // update selectedItem if value prop is defined and differs from currently selected item
-        const { selectedItem, idx } = RNPickerSelect.getSelectedItem({
+        const { selectedItem, idx } = PickerSelectN.getSelectedItem({
             items,
             key: nextProps.itemKey,
             value: nextProps.value,
@@ -149,11 +149,11 @@ export default class PickerSelectN extends PureComponent {
     constructor(props) {
         super(props);
 
-        const items = RNPickerSelect.handlePlaceholder({
+        const items = PickerSelectN.handlePlaceholder({
             placeholder: props.placeholder,
         }).concat(props.items);
 
-        const { selectedItem } = RNPickerSelect.getSelectedItem({
+        const { selectedItem } = PickerSelectN.getSelectedItem({
             items,
             key: props.itemKey,
             value: props.value,
@@ -417,7 +417,6 @@ export default class PickerSelectN extends PureComponent {
                     editable={false}
                     {...textInputProps}
                 />
-                {/* {this.renderIcon()} */}
                 <View
                     testID="icon_container"
                     style={[defaultStyles.iconContainer, style.iconContainer]}
@@ -534,7 +533,6 @@ export default class PickerSelectN extends PureComponent {
                 >
                     {this.renderPickerItems()}
                 </Picker>
-                {/* {this.renderIcon()} */}
                 <View
                     testID="icon_container"
                     style={[defaultStyles.iconContainer, style.iconContainer]}

@@ -1,7 +1,7 @@
 {
   "name": "react-native-picker-select-n",
   "title": "React Native Picker Select N",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "React Native Picker",
   "main": "src/index.js",
   "files": [
@@ -40,8 +40,5 @@
   "dependencies": {
     "lodash.isequal": "^4.5.0",
     "prop-types": "^15.7.2"
-  },
-  "publishConfig": { 
-    "registry": "https://npm.pkg.github.com/"
   }
 }
