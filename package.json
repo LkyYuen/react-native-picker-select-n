@@ -1,7 +1,7 @@
 {
   "name": "react-native-picker-select-n",
   "title": "React Native Picker Select N",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React Native Picker",
   "main": "src/index.js",
   "files": [
