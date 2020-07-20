@@ -2,29 +2,29 @@
   "name": "react-native-picker-select-n",
   "title": "React Native Picker Select N",
   "version": "1.0.0",
-  "description": "TODO",
-  "main": "index.js",
+  "description": "React Native Picker",
+  "main": "src/index.js",
   "files": [
     "README.md",
-    "android",
-    "index.js",
-    "ios",
-    "react-native-picker-select-n.podspec"
+    "/src"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/github_account/react-native-picker-select-n.git",
-    "baseUrl": "https://github.com/github_account/react-native-picker-select-n"
+    "url": "git+https://github.com/LkyYuen/react-native-picker-select-n.git",
+    "baseUrl": "https://github.com/LkyYuen/react-native-picker-select-n"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "dropdown",
+    "picker",
+    "select"
   ],
   "author": {
-    "name": "Your Name",
-    "email": "yourname@email.com"
+    "name": "Lky Yuen",
+    "email": "lkylau96@gmail.com"
   },
   "license": "MIT",
   "licenseFilename": "LICENSE",
@@ -36,5 +36,9 @@
   "devDependencies": {
     "react": "^16.9.0",
     "react-native": "^0.61.5"
+  },
+  "dependencies": {
+    "lodash.isequal": "^4.5.0",
+    "prop-types": "^15.7.2"
   }
 }
