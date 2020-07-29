@@ -35,7 +35,9 @@
   },
   "devDependencies": {
     "react": "^16.9.0",
-    "react-native": "^0.61.5"
+    "react-native": "^0.61.5",
+    "logkitty": ">=0.7.1",
+    "mem": ">=4.0.0"
   },
   "dependencies": {
     "lodash.isequal": "^4.5.0",
