@@ -390,7 +390,7 @@ export default class PickerSelectN extends PureComponent {
     }
 
     renderTextInputOrChildren() {
-        const { children, style, textInputProps } = this.props;
+        const { children, style, textInputProps, Icon } = this.props;
         const { selectedItem } = this.state;
 
         const containerStyle =
